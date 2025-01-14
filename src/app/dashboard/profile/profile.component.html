@@ -1,0 +1,82 @@
+<div class="flex flex-col items-center p-8 rounded-xl shadow-2xl backdrop-blur-lg w-full max-w-xl mx-auto">
+    <h2 class="text-4xl font-bold text-white mb-10 neon-text-animation">Profile</h2>
+  
+    <!-- Profile Picture -->
+    <div class="mb-8">
+      <img 
+        [src]="profileData.profilePicture || 'path/to/default/image.jpg'" 
+        alt="Profile Picture"
+        class="rounded-full w-40 h-40 object-cover shadow-lg border-4 border-gradient-to-r from-indigo-500 to-purple-500">
+    </div>
+  
+    <!-- Profile Details -->
+    <div class="w-full space-y-8">
+      <!-- View Mode -->
+      <div *ngIf="!isEditing">
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <p class="text-xl text-gray-200 font-semibold">
+            Name: <span class="text-gray-400">{{ profileData.name }}</span>
+          </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg mt-4">
+          <p class="text-xl text-gray-200">
+            Email: <span class="text-gray-400">{{ profileData.email}}</span>
+          </p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg mt-4">
+          <p class="text-xl text-gray-200">
+            Bio: <span class="text-gray-400">{{ profileData.bio }}</span>
+          </p>
+        </div>
+        <button 
+          (click)="toggleEdit()" 
+          class="mt-8 w-full px-6 py-3 text-white bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg shadow-xl hover:from-indigo-600 hover:to-purple-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 neon-button-animation">
+          Edit Profile
+        </button>
+      </div>
+  
+      <!-- Edit Mode -->
+      <div *ngIf="isEditing">
+        <div class="space-y-6">
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg w-full">
+            <label for="name" class="text-lg text-gray-300 font-semibold">Name</label>
+            <input 
+              id="name" 
+              [(ngModel)]="profileData.name" 
+              type="text"
+              class="w-full p-4 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-300 mt-2 transition duration-300 ease-in-out">
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg mt-4 w-full">
+            <label for="email" class="text-lg text-gray-300 font-semibold">Email</label>
+            <input 
+              id="email" 
+              [(ngModel)]="profileData.email" 
+              type="email"
+              class="w-full p-4 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-300 mt-2 transition duration-300 ease-in-out">
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg mt-4 w-full">
+            <label for="bio" class="text-lg text-gray-300 font-semibold">Bio</label>
+            <textarea 
+              id="bio" 
+              [(ngModel)]="profileData.bio"
+              class="w-full p-4 rounded-lg bg-gray-700 text-white border border-gray-600 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-300 mt-2 transition duration-300 ease-in-out"
+              rows="4">
+            </textarea>
+          </div>
+          <div class="flex space-x-4 mt-6">
+            <button 
+              (click)="saveProfile()" 
+              class="w-full px-6 py-3 text-white bg-gradient-to-r from-green-500 to-teal-600 rounded-lg shadow-sm hover:from-green-600 hover:to-teal-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500 neon-button-animation">
+              Save Changes
+            </button>
+            <button 
+              (click)="cancelEdit()" 
+              class="w-full px-6 py-3 text-white bg-gradient-to-r from-red-500 to-orange-600 rounded-lg shadow-sm hover:from-red-600 hover:to-orange-700 transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-red-500 neon-button-animation">
+              Cancel
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

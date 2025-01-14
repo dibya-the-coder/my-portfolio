@@ -1,0 +1,23 @@
+/* Neon Glow Animation */
+@keyframes neonGlow {
+    0% {
+      filter: blur(10px) hue-rotate(0deg);
+    }
+    50% {
+      filter: blur(20px) hue-rotate(180deg);
+    }
+    100% {
+      filter: blur(10px) hue-rotate(360deg);
+    }
+  }
+  
+  /* Section Background Animation */
+  section.bg-gray-900::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, rgba(58, 0, 107, 0.6), transparent);
+    z-index: 0;
+    animation: neonGlow 6s infinite alternate;
+  }
+  

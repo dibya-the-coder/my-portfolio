@@ -1,0 +1,26 @@
+.neon-text-animation {
+    animation: neonText 1.5s ease-in-out infinite alternate;
+}
+
+/* Neon button animation */
+.neon-button-animation {
+    animation: neonButton 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonText {
+    0% {
+        text-shadow: 0 0 3px #ffffff, 0 0 6px #ff00ff, 0 0 12px #ff00ff, 0 0 24px #ff00ff;
+    }
+    100% {
+        text-shadow: 0 0 3px #ffffff, 0 0 6px #00ffff, 0 0 12px #00ffff, 0 0 24px #00ffff;
+    }
+}
+
+@keyframes neonButton {
+    0% {
+        box-shadow: 0 0 3px #ffffff, 0 0 6px #ff00ff, 0 0 12px #ff00ff, 0 0 24px #ff00ff;
+    }
+    100% {
+        box-shadow: 0 0 3px #ffffff, 0 0 6px #00ffff, 0 0 12px #00ffff, 0 0 24px #00ffff;
+    }
+}
