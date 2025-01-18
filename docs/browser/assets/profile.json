@@ -1,7 +1,7 @@
 {
   "personalInfo": {
     "name": "Mr. Dibya Ranjan Rout",
-    "bio": "Short bio here",
+    "bio": "A passionate software developer with expertise in building dynamic and efficient applications. I thrive on learning new technologies and creating impactful solutions that make a difference.",
     "email": "example@email.com",
     "phone": "123-456-7890",
     "address": "123 Main St, City, Country",
@@ -21,13 +21,28 @@
       "description": "Worked on developing web applications."
     }
   ],
-  "education": [
-    {
-      "degree": "Master in Computer Application",
-      "institution": "University Name",
-      "year": 2024
-    }
-  ],
+"education": [
+  {
+    "degree": "Master in Computer Application",
+    "institution": "Biju Patnaik University of Technology",
+    "year": 2024
+  },
+  {
+    "degree": "Bachalor in Computer Science",
+    "institution": "Kendrapara Autonomous College, Kendrapara",
+    "year": 2022
+  },
+  {
+    "degree": "Heigher Secondery Education",
+    "institution": "Kendrapara Higher Secondery School",
+    "year": 2019
+  },
+  {
+    "degree": "Matriculation",
+    "institution": "Mahabir Ucha Bidya Pitha",
+    "year": 2017
+  }
+],
   "certifications": [
     {
       "title": "Certified Java Developer",
