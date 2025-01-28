@@ -2,24 +2,17 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ThemeService } from '../../theme.service';
-import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { faCoffee, faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, RouterModule,FontAwesomeModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
   isDarktheme: boolean;
-  
-  faCoffee = faCoffee;
-  faSun = faSun;
-  faMoon = faMoon;
 
   constructor(private themeService: ThemeService) {
     this.isDarktheme = this.themeService.currentTheme();

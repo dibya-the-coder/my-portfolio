@@ -26,9 +26,5 @@ export const routes: Routes = [
         path: 'contact',
         component: ContactComponent
     },
-    {
-        path: 'dashboard',
-        loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
-    }
 
 ];
