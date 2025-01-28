@@ -9,5 +9,4 @@ import { RouterModule } from '@angular/router';
   imports: [RouterModule]
 })
 export class HomeComponent {
-
 }

@@ -1,23 +1,69 @@
-/* Neon Glow Animation */
-@keyframes neonGlow {
-    0% {
-      filter: blur(10px) hue-rotate(0deg);
-    }
-    50% {
-      filter: blur(20px) hue-rotate(180deg);
-    }
-    100% {
-      filter: blur(10px) hue-rotate(360deg);
-    }
+@keyframes bg-rotate {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  /* Section Background Animation */
-  section.bg-gray-900::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(circle, rgba(58, 0, 107, 0.6), transparent);
-    z-index: 0;
-    animation: neonGlow 6s infinite alternate;
+  100% {
+    transform: rotate(360deg);
   }
-  
+}
+
+@keyframes bg-move {
+  0%, 100% {
+    transform: translateX(0) scale(1.2);
+  }
+  50% {
+    transform: translateX(10px) scale(1.3);
+  }
+}
+
+@keyframes bg-move-reverse {
+  0%, 100% {
+    transform: translateX(0) scale(1.1);
+  }
+  50% {
+    transform: translateX(-10px) scale(1.2);
+  }
+}
+
+/* Profile Picture Animation */
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Button Animation */
+@keyframes button-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  }
+}
+
+/* Apply Animations */
+.animate-bg-rotate {
+  animation: bg-rotate 30s linear infinite;
+}
+
+.animate-bg-move {
+  animation: bg-move 10s ease-in-out infinite;
+}
+
+.animate-bg-move-reverse {
+  animation: bg-move-reverse 12s ease-in-out infinite;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 5s ease-in-out infinite;
+}
+
+.animate-button-pulse {
+  animation: button-pulse 2s ease-in-out infinite;
+}
