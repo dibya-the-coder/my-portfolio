@@ -8,10 +8,10 @@ export const AllDataFields  = {
       profilePicture: "SampleProfilePicture.jpg"
     },
     technologies: {
-      handsOn: ["React", "Angular", "Node.js"],
-      workedOn: ["Python", "Java", "Spring Boot"]
+      handsOn: [".NET Core", "SQL Server", "React", "Angular", "Node.js", ],
+      workedOn: [".NET with React", ".net with Angular", "Spring Boot with React"]
     },
-    programmingLanguages: ["JavaScript", "Python", "C#"],
+    programmingLanguages: [ "C#", "JavaScript", "Java"],
     operatingSystems: ["Windows", "Linux"],
     experience: [
       {
