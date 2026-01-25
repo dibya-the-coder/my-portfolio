@@ -5,7 +5,7 @@ export const AllDataFields  = {
       email: "dibyaranjan.ok@gmail.com",
       phone: "+91-7008443894",
       address: "Odisha Nikirai Kendrapara",
-      profilePicture: "SampleProfilePicture.jpg"
+      profilePicture: "profile.JPG"
     },
     technologies: {
       handsOn: [".NET Core", "SQL Server", "React", "Angular", "Node.js", ],
@@ -93,9 +93,9 @@ export const AllDataFields  = {
       {
         name: "Task Manager App",
         description: "A task management application designed to help users stay organized and productive.",
-        previewImage: "sampleProjectImage.jpg",
+        previewImage: "taskMaster.png",
         technologies: ["Angular", "Firebase", "Tailwind CSS"],
-        projectLink: "https://www.example.com/task-manager"
+        projectLink: "https://dibya-the-coder.github.io/task-master/"
       },
       {
         name: "Portfolio Website",

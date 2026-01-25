@@ -5,7 +5,7 @@
     "email": "example@email.com",
     "phone": "123-456-7890",
     "address": "123 Main St, City, Country",
-    "profilePicture":"SampleProfilePicture.jpg"
+    "profilePicture":"profile.JPG"
   },
   "technologies": {
     "handsOn": ["React", "Angular", "Node.js"],
