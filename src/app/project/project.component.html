@@ -1,3 +1,30 @@
+<<<<<<< HEAD
+<div
+  class="container mx-auto p-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+  <!-- Page Header -->
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold text-gray-800 dark:text-gray-100">My Projects</h2>
+    <p class="text-lg text-gray-600 dark:text-gray-400 mt-4">Explore the collection of projects we've worked on. Our
+      diverse projects showcase various technologies and creative solutions.</p>
+  </div>
+
+  <!-- Projects Grid -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <!-- Project Card Example -->
+    <div *ngFor="let project of projects"
+      class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow-xl transform hover:scale-105 transition-all duration-300">
+      <img class="h-40 w-full object-cover rounded-t-xl" [src]="project.previewImage" [alt]="project.name" />
+      <div class="mt-6">
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-100">{{ project.name }}</h3>
+        <p class="text-gray-600 dark:text-gray-400 mt-2">{{ project.description }}</p>
+        <div class="mt-4">
+          <span class="text-gray-500 dark:text-gray-500 text-sm">Technologies Used:</span>
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span *ngFor="let tech of project.technologies"
+              class="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-800 text-white text-sm rounded-full shadow-md">
+              {{ tech }}
+            </span>
+=======
 <div class="container mx-auto p-8 bg-gray-900 text-white">
     <!-- Page Header -->
     <div class="text-center mb-12">
@@ -26,9 +53,10 @@
                 {{ tech }}
               </span>
             </div>
+>>>>>>> 93f10b851bb1be23c3055eb422f76fea8db73ade
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+</div>

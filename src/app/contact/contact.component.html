@@ -1,33 +1,31 @@
-<div class="container mx-auto p-6 bg-gray-900 text-white flex items-center justify-center min-h-screen">
+<div
+  class="container mx-auto p-6 bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex items-center justify-center min-h-screen transition-colors duration-300">
   <!-- Left Side Message (With Content-Oriented Image) -->
-  <div class="w-full lg:w-1/2 p-8 text-center lg:text-left text-white font-semibold text-3xl rounded-xl shadow-lg lg:mr-6 flex flex-col items-center lg:items-start justify-center">
-    <h2 class="mb-6 text-4xl lg:text-5xl leading-tight">Let's Get in Touch!</h2>
-    <p class="text-sm lg:text-base mb-6">I'd love to hear from you. Whether it's a project or just a casual chat, feel free to reach out!</p>
+  <div
+    class="w-full lg:w-1/2 p-8 text-center lg:text-left font-semibold text-3xl rounded-xl shadow-lg lg:mr-6 flex flex-col items-center lg:items-start justify-center">
+    <h2 class="mb-6 text-4xl lg:text-5xl leading-tight text-gray-800 dark:text-white">Let's Get in Touch!</h2>
+    <p class="text-sm lg:text-base mb-6 text-gray-600 dark:text-gray-300">I'd love to hear from you. Whether it's a
+      project or just a casual chat, feel free to reach out!</p>
 
     <!-- Content-Oriented Image -->
     <div class="mb-6 w-full lg:w-3/4 xl:w-2/3">
-      <img src="mail-svgrepo-com.svg" alt="Contact Image" class="w-full h-[12rem] lg:h-[15rem] xl:h-[18rem] rounded-lg shadow-lg">
+      <img src="mail-svgrepo-com.svg" alt="Contact Image"
+        class="w-full h-[12rem] lg:h-[15rem] xl:h-[18rem] rounded-lg shadow-lg">
     </div>
 
   </div>
 
   <!-- Right Side Contact Form -->
-  <div class="max-w-lg mx-auto bg-gray-800 p-8 rounded-xl shadow-xl w-full lg:w-1/2">
+  <div
+    class="max-w-lg mx-auto bg-gray-100 dark:bg-gray-800 p-8 rounded-xl shadow-xl w-full lg:w-1/2 transition-colors duration-300">
     <form (ngSubmit)="onSubmit()" #contactForm="ngForm" novalidate>
       <div class="space-y-6">
         <!-- Name Input -->
         <div>
-          <label for="name" class="block text-sm font-semibold text-gray-100 mb-2">Your Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            [(ngModel)]="contact.name"
-            required
-            #name="ngModel"
-            class="w-full p-4 bg-gray-700 text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter your name"
-          />
+          <label for="name" class="block text-sm font-semibold text-gray-700 dark:text-gray-100 mb-2">Your Name</label>
+          <input type="text" id="name" name="name" [(ngModel)]="contact.name" required #name="ngModel"
+            class="w-full p-4 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300 dark:border-transparent transition-colors duration-300"
+            placeholder="Enter your name" />
           <div *ngIf="name.invalid && name.touched" class="text-red-500 text-sm">
             Name is required.
           </div>
@@ -35,18 +33,11 @@
 
         <!-- Email Input -->
         <div>
-          <label for="email" class="block text-sm font-semibold text-gray-100 mb-2">Your Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            [(ngModel)]="contact.email"
-            required
-            email
-            #email="ngModel"
-            class="w-full p-4 bg-gray-700 text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter your email"
-          />
+          <label for="email" class="block text-sm font-semibold text-gray-700 dark:text-gray-100 mb-2">Your
+            Email</label>
+          <input type="email" id="email" name="email" [(ngModel)]="contact.email" required email #email="ngModel"
+            class="w-full p-4 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300 dark:border-transparent transition-colors duration-300"
+            placeholder="Enter your email" />
           <div *ngIf="email.invalid && email.touched" class="text-red-500 text-sm">
             <div *ngIf="email.errors?.['required']">Email is required.</div>
             <div *ngIf="email.errors?.['email']">Please enter a valid email.</div>
@@ -55,17 +46,11 @@
 
         <!-- Message Input -->
         <div>
-          <label for="message" class="block text-sm font-semibold text-gray-100 mb-2">Your Message</label>
-          <textarea
-            id="message"
-            name="message"
-            [(ngModel)]="contact.message"
-            required
-            #message="ngModel"
-            rows="5"
-            class="w-full p-4 bg-gray-700 text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-            placeholder="Enter your message"
-          ></textarea>
+          <label for="message" class="block text-sm font-semibold text-gray-700 dark:text-gray-100 mb-2">Your
+            Message</label>
+          <textarea id="message" name="message" [(ngModel)]="contact.message" required #message="ngModel" rows="5"
+            class="w-full p-4 bg-white dark:bg-gray-700 text-gray-900 dark:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 border border-gray-300 dark:border-transparent transition-colors duration-300"
+            placeholder="Enter your message"></textarea>
           <div *ngIf="message.invalid && message.touched" class="text-red-500 text-sm">
             Message is required.
           </div>
@@ -73,11 +58,8 @@
 
         <!-- Submit Button -->
         <div class="text-center">
-          <button
-            type="submit"
-            [disabled]="contactForm.invalid"
-            class="w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded-md shadow-lg hover:bg-blue-500 transition duration-300"
-          >
+          <button type="submit" [disabled]="contactForm.invalid"
+            class="w-full py-3 px-6 bg-blue-600 text-white font-semibold rounded-md shadow-lg hover:bg-blue-500 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
             Send Message
           </button>
         </div>

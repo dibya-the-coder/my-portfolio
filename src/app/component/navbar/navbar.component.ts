@@ -12,15 +12,14 @@ import { ThemeService } from '../../theme.service';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
-  isDarktheme: boolean;
+  isDarktheme;
 
   constructor(private themeService: ThemeService) {
-    this.isDarktheme = this.themeService.currentTheme();
+    this.isDarktheme = this.themeService.isDarkMode;
   }
 
   toggleTheme() {
-    this.isDarktheme = !this.isDarktheme;
-    this.themeService.setTheme()
+    this.themeService.setTheme();
   }
 
   isDropdownOpen: boolean = false;

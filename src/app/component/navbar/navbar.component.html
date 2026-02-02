@@ -1,9 +1,9 @@
-<nav class="bg-gray-800 fixed top-0 left-0 w-full shadow-xl z-50">
+<nav class="bg-white dark:bg-gray-800 fixed top-0 left-0 w-full shadow-md z-50 transition-colors duration-300">
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-16 items-center justify-between">
       <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
         <button (click)="responsiveToggleButton()" type="button"
-          class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+          class="inline-flex items-center justify-center rounded-md p-2 text-gray-500 hover:bg-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
           aria-controls="mobile-menu" [attr.aria-expanded]="isToggleOpen.toString()">
           <span class="sr-only">Open main menu</span>
           <svg class="h-6 w-6" *ngIf="!isToggleOpen" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -27,27 +27,42 @@
 
       <div class="hidden sm:flex sm:ml-6">
         <div *ngFor="let item of routing" class="flex space-x-4">
-          <a [routerLink]="item.path" routerLinkActive="text-blue-400 bg-gray-700"
+          <a [routerLink]="item.path" routerLinkActive="text-indigo-600 dark:text-blue-400 bg-gray-100 dark:bg-gray-700"
             [routerLinkActiveOptions]="{ exact: true }"
-            class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150 ease-in-out">
+            class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white transition duration-150 ease-in-out">
             {{ item.label }}
           </a>
         </div>
       </div>
       <!-- Theme is yet to apply -->
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 space-x-3 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-        <!-- <button (click)="toggleTheme()"
-          class=" size-9 bg-gray-700 text-gray-400 hover:text-white focus:outline-none rounded-full">
-        </button> -->
+        <button (click)="toggleTheme()"
+          class="p-2 rounded-full text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-colors duration-200">
+          <!-- Sun Icon -->
+          <svg *ngIf="!isDarktheme()" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+            </path>
+          </svg>
+          <!-- Moon Icon -->
+          <svg *ngIf="isDarktheme()" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
 
-  <div class="sm:hidden fixed top-16 w-full bg-gray-800 z-40" id="mobile-menu" *ngIf="isToggleOpen">
+  <div
+    class="sm:hidden fixed top-16 w-full bg-white dark:bg-gray-800 z-40 border-t border-gray-200 dark:border-gray-700 shadow-lg"
+    id="mobile-menu" *ngIf="isToggleOpen">
     <div *ngFor="let item of routing" class="space-y-1 px-2 pb-3 pt-2">
-      <a [routerLink]="item.path" routerLinkActive="text-blue-400 bg-gray-700"
+      <a [routerLink]="item.path" routerLinkActive="text-indigo-600 dark:text-blue-400 bg-gray-100 dark:bg-gray-700"
         [routerLinkActiveOptions]="{ exact: true }" (click)="responsiveToggleButton()"
-        class="block rounded-md px-5 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white transition duration-150 ease-in-out">
+        class="block rounded-md px-5 py-2 text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 hover:text-gray-900 dark:hover:text-white transition duration-150 ease-in-out">
         {{ item.label }}
       </a>
     </div>
