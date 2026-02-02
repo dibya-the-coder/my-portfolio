@@ -15,8 +15,8 @@ export class ThemeService {
     if (savedTheme) {
       this.isDarkMode.set(savedTheme === 'dark');
     } else {
-      // Default to light theme as requested
-      this.isDarkMode.set(false);
+      // Default to dark theme as requested
+      this.isDarkMode.set(true);
     }
     this.applyTheme();
   }

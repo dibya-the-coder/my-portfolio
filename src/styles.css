@@ -1,12 +1,17 @@
+@import "@fortawesome/fontawesome-free/css/all.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  html, body {
+
+  html,
+  body {
     @apply bg-white text-gray-900 transition-colors duration-300;
   }
-  html.dark, html.dark body {
+
+  html.dark,
+  html.dark body {
     @apply bg-gray-900 text-white;
   }
 }

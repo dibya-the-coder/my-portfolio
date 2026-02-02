@@ -20,4 +20,7 @@ export class DataProvider {
   getProfilePicture(){
     return this.data.personalInfo.profilePicture;
   }
+  getSocialMedia(){
+    return this.data.personalInfo.socialMedia;
+  }
 } 

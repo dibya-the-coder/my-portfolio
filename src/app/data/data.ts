@@ -2,10 +2,14 @@ export const AllDataFields  = {
     personalInfo: {
       name: "Mr. Dibya Ranjan Rout",
       bio: "A passionate software developer with expertise in building dynamic and efficient applications. I thrive on learning new technologies and creating impactful solutions that make a difference.",
-      email: "dibyaranjan.ok@gmail.com",
+      email: "dibyaranjan10000@gmail.com",
       phone: "+91-7008443894",
       address: "Odisha Nikirai Kendrapara",
-      profilePicture: "profile.JPG"
+      profilePicture: "profile.JPG",
+      socialMedia: {
+        github: "https://github.com/dibya-the-coder",
+        linkedin: "https://www.linkedin.com/in/dibya-ranjan-rout-975bb2281"
+      }
     },
     technologies: {
       handsOn: [".NET Core", "SQL Server", "React", "Angular", "Node.js", ],
@@ -18,13 +22,19 @@ export const AllDataFields  = {
         role: "Software Intern",
         company: "Talentelgia Technologies Pvt. Ltd.",
         duration: "June 2024 - December 2024",
-        description: "Worked on developing web applications."
+        description: "Assisted in developing and testing web applications using Angular and .NET Core. Collaborated with senior developers to troubleshoot issues and improve code quality."
       },
       {
         role: "Junior Software Engineer",
         company: "Talentelgia Technologies Pvt. Ltd.",
-        duration: "December 2024 - Present",
-        description: "Worked on developing web applications."
+        duration: "December 2024 - January 2026",
+        description: "Developed scalable web solutions, implemented RESTful APIs, and optimized database performance using SQL Server. Participated in code reviews and agile development cycles."
+      },
+      {
+        role: "Software Engineer L1",
+        company: "Talentelgia Technologies Pvt. Ltd.",
+        duration: "January 2026 - Present",
+        description: "Leading development modules using .NET technologies, designing robust microservices, and mentoring junior developers. Specialized in building high-performance enterprise applications."
       }
     ],
     education: [
@@ -83,13 +93,13 @@ export const AllDataFields  = {
       }
     ],
     projects: [
-      {
-        name: "E-commerce Platform",
-        description: "A modern e-commerce platform built with React, Tailwind CSS, and Node.js.",
-        previewImage: "sampleProjectImage.jpg",
-        technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
-        projectLink: "https://www.example.com/ecommerce"
-      },
+      // {
+      //   name: "E-commerce Platform",
+      //   description: "A modern e-commerce platform built with React, Tailwind CSS, and Node.js.",
+      //   previewImage: "sampleProjectImage.jpg",
+      //   technologies: ["React", "Tailwind CSS", "Node.js", "MongoDB"],
+      //   projectLink: "https://www.example.com/ecommerce"
+      // },
       {
         name: "Task Manager App",
         description: "A task management application designed to help users stay organized and productive.",
@@ -97,19 +107,19 @@ export const AllDataFields  = {
         technologies: ["Angular", "Firebase", "Tailwind CSS"],
         projectLink: "https://dibya-the-coder.github.io/task-master/"
       },
-      {
-        name: "Portfolio Website",
-        description: "A personal portfolio showcasing my web development skills and projects.",
-        previewImage: "sampleProjectImage.jpg",
-        technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
-        projectLink: "https://www.example.com/portfolio"
-      },
-      {
-        name: "Blog Platform",
-        description: "A blogging platform with user authentication, post management, and commenting features.",
-        previewImage: "sampleProjectImage.jpg",
-        technologies: ["Vue.js", "Node.js", "MongoDB", "Express"],
-        projectLink: "https://www.example.com/blog-platform"
-      }
+      // {
+      //   name: "Portfolio Website",
+      //   description: "A personal portfolio showcasing my web development skills and projects.",
+      //   previewImage: "sampleProjectImage.jpg",
+      //   technologies: ["HTML", "CSS", "JavaScript", "Tailwind CSS"],
+      //   projectLink: "https://www.example.com/portfolio"
+      // },
+      // {
+      //   name: "Blog Platform",
+      //   description: "A blogging platform with user authentication, post management, and commenting features.",
+      //   previewImage: "sampleProjectImage.jpg",
+      //   technologies: ["Vue.js", "Node.js", "MongoDB", "Express"],
+      //   projectLink: "https://www.example.com/blog-platform"
+      // }
     ]
   };
