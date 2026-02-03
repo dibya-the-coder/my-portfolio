@@ -27,9 +27,9 @@ export const routes: Routes = [
         path: 'contact',
         component: ContactComponent
     },
-    {
-        path: 'achievements',
-        component: AchievementsComponent
-    },
+    // {
+    //     path: 'achievements',
+    //     component: AchievementsComponent
+    // },
 
 ];

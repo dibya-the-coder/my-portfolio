@@ -11,18 +11,18 @@ export const AllDataFields  = {
         whatsapp: "https://wa.me/917008443894"
       }
     },
-    technologies: {
-      handsOn: [".NET Core", "SQL Server", "React", "Angular", "Node.js", ],
-      workedOn: [".NET with React", ".net with Angular", "Spring Boot with React"]
-    },
-    programmingLanguages: [ "C#", "JavaScript", "Java"],
+    techSkills: [".NET Core", "React", "Angular", "HTML", "CSS", "JavaScript"],
+    programmingLanguages: ["C#", "JavaScript", "TypeScript"],
+    databases: ["MS SQL Server (Hands-on experience)", "MongoDB", "PostgreSQL (Basic exposure)"],
+    designFrameworks: ["Tailwind", "Bootstrap", "React-Bootstrap", "Ant Design"],
+    tools: ["Visual Studio", "VS Code", "Postman", "GitHub Desktop", "Docker Desktop"],
     operatingSystems: ["Windows", "Linux"],
     experience: [
       {
-        role: "Software Intern",
+        role: "Software Engineer L1",
         company: "Talentelgia Technologies Pvt. Ltd.",
-        duration: "June 2024 - December 2024",
-        description: "Assisted in developing and testing web applications using Angular and .NET Core. Collaborated with senior developers to troubleshoot issues and improve code quality."
+        duration: "January 2026 - Present",
+        description: "Leading development modules using .NET technologies, designing robust microservices, and mentoring junior developers. Specialized in building high-performance enterprise applications."
       },
       {
         role: "Junior Software Engineer",
@@ -31,10 +31,10 @@ export const AllDataFields  = {
         description: "Developed scalable web solutions, implemented RESTful APIs, and optimized database performance using SQL Server. Participated in code reviews and agile development cycles."
       },
       {
-        role: "Software Engineer L1",
+        role: "Software Intern",
         company: "Talentelgia Technologies Pvt. Ltd.",
-        duration: "January 2026 - Present",
-        description: "Leading development modules using .NET technologies, designing robust microservices, and mentoring junior developers. Specialized in building high-performance enterprise applications."
+        duration: "June 2024 - December 2024",
+        description: "Assisted in developing and testing web applications using Angular and .NET Core. Collaborated with senior developers to troubleshoot issues and improve code quality."
       }
     ],
     education: [

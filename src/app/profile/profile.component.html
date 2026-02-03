@@ -26,26 +26,37 @@
     </div>
   </div>
 
-  <!-- Hands-On and Worked-On Technologies -->
+  <!-- Skills Sections -->
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
-    <app-profile-section-tags title="Hands-On Technologies" [tags]="profile.technologies.handsOn"
-      tagClass="bg-gradient-to-r from-purple-500 via-pink-600 to-red-500">
+    <!-- Tech Skills -->
+    <app-profile-section-tags title="Tech Skills" [tags]="profile.techSkills"
+      tagClass="bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600">
     </app-profile-section-tags>
-    <app-profile-section-tags title="Technologies I've Worked On" [tags]="profile.technologies.workedOn"
-      tagClass="bg-indigo-600 dark:bg-indigo-700">
+    <!-- Programming Languages -->
+    <app-profile-section-tags title="Programming Languages" [tags]="profile.programmingLanguages"
+      tagClass="bg-gradient-to-r from-emerald-500 via-teal-600 to-cyan-600">
     </app-profile-section-tags>
   </div>
 
-  <!-- New Grid for Programming Languages and Operating Systems -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
-    <!-- Programming Languages Known -->
-    <app-profile-section-tags title="Programming Languages Known" [tags]="profile.programmingLanguages"
-      tagClass="bg-gradient-to-r from-green-500 via-blue-600 to-purple-500">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+    <!-- Databases -->
+    <app-profile-section-tags title="Databases" [tags]="profile.databases"
+      tagClass="bg-gradient-to-r from-orange-500 via-red-600 to-pink-600">
     </app-profile-section-tags>
+    <!-- Design Library & Framework -->
+    <app-profile-section-tags title="Design Libraries & Frameworks" [tags]="profile.designFrameworks"
+      tagClass="bg-gradient-to-r from-violet-500 via-purple-600 to-indigo-600">
+    </app-profile-section-tags>
+  </div>
 
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+    <!-- Tools -->
+    <app-profile-section-tags title="Tools" [tags]="profile.tools"
+      tagClass="bg-gradient-to-r from-slate-600 via-gray-700 to-zinc-800">
+    </app-profile-section-tags>
     <!-- Operating Systems -->
     <app-profile-section-tags title="Operating Systems" [tags]="profile.operatingSystems"
-      tagClass="bg-gradient-to-r from-teal-500 via-green-600 to-blue-500">
+      tagClass="bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-700">
     </app-profile-section-tags>
   </div>
 
@@ -58,7 +69,7 @@
   </div>
 
   <!-- Certifications Section -->
-  <div
+  <!-- <div
     class="bg-gray-100 dark:bg-gray-800 p-8 rounded-xl shadow-md mt-12 hover:shadow-lg transition-shadow transition-colors duration-300">
     <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Certifications</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -66,5 +77,5 @@
         <app-certification-card [cert]="cert"></app-certification-card>
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
