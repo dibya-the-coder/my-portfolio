@@ -29,7 +29,8 @@ export class NavbarComponent {
     { path: '/', label: 'Home' },
     { path: '/profile', label: 'Profile' },
     { path: '/project', label: 'Project' },
-    { path: '/about', label: 'About' },
+    { path: '/achievements', label: 'Achievements' },
+    // { path: '/about', label: 'About' },
     { path: '/contact', label: 'Contact' },
   ];
 

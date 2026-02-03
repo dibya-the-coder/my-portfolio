@@ -1,14 +1,14 @@
 export const AllDataFields  = {
     personalInfo: {
       name: "Mr. Dibya Ranjan Rout",
-      bio: "A passionate software developer with expertise in building dynamic and efficient applications. I thrive on learning new technologies and creating impactful solutions that make a difference.",
+      bio: "Software Developer L1 specializing in .NET Core with expertise in building robust Web APIs. I have hands-on experience in modern frontend development using Angular and React, focused on creating seamless and efficient web applications with clean, maintainable code.",
       email: "dibyaranjan10000@gmail.com",
-      phone: "+91-7008443894",
-      address: "Odisha Nikirai Kendrapara",
+      // phone: "+91-7008443894",
       profilePicture: "profile.JPG",
       socialMedia: {
         github: "https://github.com/dibya-the-coder",
-        linkedin: "https://www.linkedin.com/in/dibya-ranjan-rout-975bb2281"
+        linkedin: "https://www.linkedin.com/in/dibya-ranjan-rout-975bb2281",
+        whatsapp: "https://wa.me/917008443894"
       }
     },
     technologies: {
@@ -61,9 +61,11 @@ export const AllDataFields  = {
     ],
     certifications: [
       {
-        title: "Certified Java Developer",
-        issuer: "Oracle",
-        date: "Jan 2023"
+        title: "Azure Fundamentals",
+        issuer: "Microsoft",
+        date: "Feb 2024",
+        certificateLink: "https://www.microsoft.com/en-us/learning/certification-exam-az-900.aspx",
+        issuerIcon: "fab fa-microsoft"
       }
     ],
     mails: [

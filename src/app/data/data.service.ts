@@ -23,4 +23,7 @@ export class DataProvider {
   getSocialMedia(){
     return this.data.personalInfo.socialMedia;
   }
+  getCertifications(){
+    return this.data.certifications;
+  }
 } 

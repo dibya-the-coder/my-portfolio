@@ -1,77 +1,34 @@
-/* Neon Text Animation */
-.neon-text {
-    color: #fff;
-    text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff;
-    animation: neonGlow 1.5s ease-in-out infinite alternate;
-  }
-  
-  /* Pulsing Neon Effect */
-  @keyframes neonGlow {
-    0% {
-      text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff;
-    }
-    50% {
-      text-shadow: 0 0 10px #fff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff, 0 0 30px #ff00ff;
-    }
-    100% {
-      text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 15px #ff00ff, 0 0 20px #ff00ff, 0 0 25px #ff00ff;
-    }
-  }
-  
-  /* Neon Input and Button Styles */
-  .neon-input {
-    background: #1a202c;
-    border: 2px solid #fff;
-    color: #fff;
-    box-shadow: 0 0 3px #ff00ff, 0 0 6px #ff00ff, 0 0 9px #ff00ff;  /* Reduced spread */
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .neon-input:focus {
-    box-shadow: 0 0 10px #ff00ff, 0 0 15px #ff00ff;  /* Reduced spread */
-  }
-  
-  .neon-button {
-    background-color: #ff00ff;
-    border: 2px solid #ff00ff;
-    box-shadow: 0 0 3px #ff00ff, 0 0 6px #ff00ff, 0 0 9px #ff00ff;  /* Reduced spread */
-    transition: box-shadow 0.3s ease, background-color 0.3s ease;
-  }
-  
-  .neon-button:hover {
-    background-color: #ff33cc;
-    box-shadow: 0 0 10px #ff00ff, 0 0 15px #ff00ff;  /* Reduced spread */
-  }
-  
-  /* Left Section Styles */
-  .left-section {
+/* Left Section Styles */
+.left-section {
+  display: block;
+  padding: 20px;
+  font-size: 1.5rem;
+  color: #ff00ff;
+}
+
+/* Additional Styles for Left Side */
+@media (max-width: 1024px) {
+  .hidden {
     display: block;
-    padding: 20px;
-    font-size: 1.5rem;
-    color: #ff00ff;
+    /* Ensure the left section is displayed on small screens */
   }
-  
-  /* Additional Styles for Left Side */
-  @media (max-width: 1024px) {
-    .hidden {
-      display: block;  /* Ensure the left section is displayed on small screens */
-    }
-  
-    /* Adjust layout for smaller screens */
-    .container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .left-section {
-      font-size: 1rem;  /* Adjust font size for smaller screens */
-      margin-bottom: 20px;
-    }
-  
-    .form-container {
-      width: 100%;  /* Make the form take full width on small screens */
-      padding: 10px;
-    }
+
+  /* Adjust layout for smaller screens */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .left-section {
+    font-size: 1rem;
+    /* Adjust font size for smaller screens */
+    margin-bottom: 20px;
+  }
+
+  .form-container {
+    width: 100%;
+    /* Make the form take full width on small screens */
+    padding: 10px;
+  }
+}

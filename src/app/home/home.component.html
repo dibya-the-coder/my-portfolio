@@ -26,24 +26,12 @@
 
     <div class="mt-8 flex justify-center gap-4">
       <a routerLink="/project"
-        class="bg-indigo-600 text-white dark:bg-gray-700 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 dark:hover:bg-gray-600 animate-button-pulse transition-all">
+        class="bg-indigo-600 text-white dark:bg-gray-700 dark:text-white px-6 py-3 rounded-lg shadow-lg hover:bg-indigo-700 dark:hover:bg-gray-600 transition-all">
         View My Work
       </a>
       <a routerLink="/profile"
-        class="bg-white text-gray-800 border border-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:border-transparent px-6 py-3 rounded-lg shadow-lg hover:bg-gray-50 dark:hover:bg-gray-700 animate-button-pulse transition-all">
+        class="bg-white text-gray-800 border border-gray-200 dark:bg-gray-800 dark:text-gray-200 dark:border-transparent px-6 py-3 rounded-lg shadow-lg hover:bg-gray-50 dark:hover:bg-gray-700 transition-all">
         View Profile
-      </a>
-    </div>
-
-    <!-- Social Media Icons -->
-    <div class="mt-8 flex justify-center gap-6">
-      <a *ngIf="socialMedia?.github" [href]="socialMedia.github" target="_blank"
-        class="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors duration-300 transform hover:scale-110">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <a *ngIf="socialMedia?.linkedin" [href]="socialMedia.linkedin" target="_blank"
-        class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 transition-colors duration-300 transform hover:scale-110">
-        <i class="fab fa-linkedin fa-2x"></i>
       </a>
     </div>
   </div>

@@ -1,0 +1,14 @@
+<div
+    class="bg-gray-100 dark:bg-gray-800 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow transition-colors duration-300 h-full">
+    <h3 class="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">{{ title }}</h3>
+    <ul class="space-y-6">
+        <li *ngFor="let item of items"
+            class="border-l-4 rounded-md pl-4 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+            [ngClass]="borderColorClass">
+            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-100">{{ item.header }}</h4>
+            <p class="text-sm text-gray-600 dark:text-gray-400">{{ item.subHeader }}</p>
+            <p class="text-gray-700 dark:text-gray-300">{{ item.description }}</p>
+            <p *ngIf="item.details" class="text-gray-700 dark:text-gray-300 mt-2">{{ item.details }}</p>
+        </li>
+    </ul>
+</div>
