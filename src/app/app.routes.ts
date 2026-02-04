@@ -5,6 +5,7 @@ import { ProjectComponent } from './project/project.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AchievementsComponent } from './achievements/achievements.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 export const routes: Routes = [
     {
@@ -32,4 +33,8 @@ export const routes: Routes = [
     //     component: AchievementsComponent
     // },
 
+    {
+        path: '**',
+        component: NotFoundComponent
+    }
 ];

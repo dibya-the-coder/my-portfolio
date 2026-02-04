@@ -1,0 +1,52 @@
+<div
+    class="min-h-[calc(100vh-4rem)] mt-16 flex flex-col items-center justify-center bg-white dark:bg-gray-900 overflow-hidden px-4 transition-colors duration-300">
+    <!-- Glowing Background Orbs -->
+    <div
+        class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-400/20 dark:bg-blue-600/10 rounded-full blur-[100px] animate-pulse">
+    </div>
+    <div
+        class="absolute bottom-1/4 right-1/4 w-64 h-64 bg-purple-400/20 dark:bg-purple-600/10 rounded-full blur-[100px] animate-pulse transition-delay-1000">
+    </div>
+
+    <div class="relative z-10 text-center">
+        <!-- Animated 404 -->
+        <div class="relative inline-block">
+            <h1
+                class="text-[10rem] md:text-[15rem] font-black leading-none tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-500 dark:to-purple-500 animate-float">
+                404
+            </h1>
+            <!-- Overlay text for depth -->
+            <h1
+                class="absolute inset-0 text-[10rem] md:text-[15rem] font-black leading-none tracking-tighter text-blue-500/10 dark:text-blue-400/5 translate-x-2 translate-y-2 animate-float pointer-events-none">
+                404
+            </h1>
+        </div>
+
+        <!-- Message -->
+        <div class="mt-8 space-y-4">
+            <h2 class="text-3xl md:text-5xl font-bold text-gray-800 dark:text-white transition-colors duration-300">
+                Lost in Outer Space?
+            </h2>
+            <p class="max-w-md mx-auto text-lg text-gray-600 dark:text-gray-400 px-4">
+                The page you're searching for seems to have vanished into a black hole. Let's get you back to familiar
+                territory.
+            </p>
+        </div>
+
+        <!-- Action Button -->
+        <div class="mt-12">
+            <a routerLink="/"
+                class="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold rounded-2xl shadow-xl hover:shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300">
+                <i class="fas fa-home text-xl"></i>
+                <span>Return Safely Home</span>
+            </a>
+        </div>
+
+        <!-- Interactive Element -->
+        <div class="mt-8">
+            <p class="text-sm text-gray-400 dark:text-gray-500 font-medium italic">
+                "Space: the final frontier... but you've gone too far."
+            </p>
+        </div>
+    </div>
+</div>
