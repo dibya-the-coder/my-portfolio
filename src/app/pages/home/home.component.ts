@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { routes } from '../app.routes';
+import { routes } from '../../app.routes';
 import { RouterModule } from '@angular/router';
-import { DataProvider } from '../data/data.service';
+import { DataProvider } from '../../data/data.service';
 
-import { GithubComponent } from '../component/social-media/github/github.component';
-import { LinkedinComponent } from '../component/social-media/linkedin/linkedin.component';
+import { GithubComponent } from '../../component/social-media/github/github.component';
+import { LinkedinComponent } from '../../component/social-media/linkedin/linkedin.component';
 
 @Component({
   selector: 'app-home',

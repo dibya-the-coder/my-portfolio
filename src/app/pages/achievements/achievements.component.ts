@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { DataProvider } from '../data/data.service';
+import { DataProvider } from '../../data/data.service';
 import { CommonModule } from '@angular/common';
 
-import { CertificationCardComponent } from '../component/certification-card/certification-card.component';
+import { CertificationCardComponent } from '../../component/certification-card/certification-card.component';
 
 @Component({
   selector: 'app-achievements',

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, Injectable } from '@angular/core';
-import { DataProvider } from '../data/data.service';
+import { DataProvider } from '../../data/data.service';
 
 @Component({
   selector: 'app-project',

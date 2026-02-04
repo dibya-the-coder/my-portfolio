@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { DataProvider } from '../data/data.service';
+import { DataProvider } from '../../data/data.service';
 
-import { CertificationCardComponent } from '../component/certification-card/certification-card.component';
-import { ProfileSectionListComponent, ListItem } from '../component/profile-section-list/profile-section-list.component';
-import { ProfileSectionTagsComponent } from '../component/profile-section-tags/profile-section-tags.component';
-import { GithubComponent } from '../component/social-media/github/github.component';
-import { LinkedinComponent } from '../component/social-media/linkedin/linkedin.component';
-import { MailComponent } from '../component/social-media/mail/mail.component';
+import { CertificationCardComponent } from '../../component/certification-card/certification-card.component';
+import { ProfileSectionListComponent, ListItem } from '../../component/profile-section-list/profile-section-list.component';
+import { ProfileSectionTagsComponent } from '../../component/profile-section-tags/profile-section-tags.component';
+import { GithubComponent } from '../../component/social-media/github/github.component';
+import { LinkedinComponent } from '../../component/social-media/linkedin/linkedin.component';
+import { MailComponent } from '../../component/social-media/mail/mail.component';
 
 @Component({
   selector: 'app-profile',
