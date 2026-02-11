@@ -32,7 +32,6 @@ export const routes: Routes = [
     //     path: 'achievements',
     //     component: AchievementsComponent
     // },
-
     {
         path: '**',
         component: NotFoundComponent
