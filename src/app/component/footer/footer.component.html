@@ -1,0 +1,38 @@
+<footer class="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 transition-colors duration-300">
+    <div class="max-w-screen-2xl mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+            <!-- Left Side: Copyright -->
+            <div class="text-center md:text-left">
+                <p class="text-sm font-medium">
+                    &copy; {{ currentYear }} {{ profile?.personalInfo?.name }}. All rights reserved.
+                </p>
+            </div>
+
+            <!-- Middle: Social Links -->
+            <div class="flex space-x-6">
+                <a *ngIf="profile?.personalInfo?.socialMedia?.github" [href]="profile.personalInfo.socialMedia.github"
+                    target="_blank" class="hover:text-blue-500 transition-colors duration-300 text-xl"
+                    aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a *ngIf="profile?.personalInfo?.socialMedia?.linkedin"
+                    [href]="profile.personalInfo.socialMedia.linkedin" target="_blank"
+                    class="hover:text-blue-500 transition-colors duration-300 text-xl" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a *ngIf="profile?.personalInfo?.socialMedia?.whatsapp"
+                    [href]="profile.personalInfo.socialMedia.whatsapp" target="_blank"
+                    class="hover:text-green-500 transition-colors duration-300 text-xl" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <!-- Right Side: Personal Message -->
+            <div class="text-center md:text-right">
+                <p class="text-sm font-medium">
+                    Created with <span class="text-red-500">&hearts;</span> and a mind for logic & a heart for design.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>

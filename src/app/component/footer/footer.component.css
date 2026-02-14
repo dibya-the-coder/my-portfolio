@@ -1,0 +1,4 @@
+/* Minimal CSS as we use primarily Tailwind */
+:host {
+    display: block;
+}

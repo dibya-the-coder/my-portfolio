@@ -34,7 +34,7 @@ export const AllDataFields  = {
       },
       {
         title: "Azure (Beginner level)",
-        tags: ["Fundamentals and Architecture", "Azure Function", "Azure Web App"],
+        tags: ["Fundamentals and Architecture", "Azure Function", "Azure Web App", "Static Web App"],
         gradient: "bg-gradient-to-r from-sky-400 via-blue-500 to-cyan-500"
       },
       {
