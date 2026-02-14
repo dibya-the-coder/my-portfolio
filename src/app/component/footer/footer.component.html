@@ -10,21 +10,9 @@
 
             <!-- Middle: Social Links -->
             <div class="flex space-x-6">
-                <a *ngIf="profile?.personalInfo?.socialMedia?.github" [href]="profile.personalInfo.socialMedia.github"
-                    target="_blank" class="hover:text-blue-500 transition-colors duration-300 text-xl"
-                    aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a *ngIf="profile?.personalInfo?.socialMedia?.linkedin"
-                    [href]="profile.personalInfo.socialMedia.linkedin" target="_blank"
-                    class="hover:text-blue-500 transition-colors duration-300 text-xl" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a *ngIf="profile?.personalInfo?.socialMedia?.whatsapp"
-                    [href]="profile.personalInfo.socialMedia.whatsapp" target="_blank"
-                    class="hover:text-green-500 transition-colors duration-300 text-xl" aria-label="WhatsApp">
-                    <i class="fab fa-whatsapp"></i>
-                </a>
+                <social-github size="fa-lg"></social-github>
+                <social-linkedin size="fa-lg"></social-linkedin>
+                <social-mail size="fa-lg"></social-mail>
             </div>
 
             <!-- Right Side: Personal Message -->

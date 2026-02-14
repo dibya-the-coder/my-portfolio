@@ -2,11 +2,14 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { DataProvider } from '../../data/data.service';
+import { GithubComponent } from "../social-media/github/github.component";
+import { LinkedinComponent } from "../social-media/linkedin/linkedin.component";
+import { MailComponent } from "../social-media/mail/mail.component";
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, GithubComponent, LinkedinComponent, MailComponent],
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.css']
 })
