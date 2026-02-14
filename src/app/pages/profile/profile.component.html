@@ -28,35 +28,8 @@
 
   <!-- Skills Sections -->
   <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 sm:mt-12">
-    <!-- Tech Skills -->
-    <app-profile-section-tags title="Tech Skills" [tags]="profile.techSkills"
-      tagClass="bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600">
-    </app-profile-section-tags>
-    <!-- Programming Languages -->
-    <app-profile-section-tags title="Programming Languages" [tags]="profile.programmingLanguages"
-      tagClass="bg-gradient-to-r from-emerald-500 via-teal-600 to-cyan-600">
-    </app-profile-section-tags>
-  </div>
-
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6 sm:mt-8">
-    <!-- Databases -->
-    <app-profile-section-tags title="Databases" [tags]="profile.databases"
-      tagClass="bg-gradient-to-r from-orange-500 via-red-600 to-pink-600">
-    </app-profile-section-tags>
-    <!-- Design Library & Framework -->
-    <app-profile-section-tags title="Design Libraries & Frameworks" [tags]="profile.designFrameworks"
-      tagClass="bg-gradient-to-r from-violet-500 via-purple-600 to-indigo-600">
-    </app-profile-section-tags>
-  </div>
-
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6 sm:mt-8">
-    <!-- Tools -->
-    <app-profile-section-tags title="Tools" [tags]="profile.tools"
-      tagClass="bg-gradient-to-r from-slate-600 via-gray-700 to-zinc-800">
-    </app-profile-section-tags>
-    <!-- Operating Systems -->
-    <app-profile-section-tags title="Operating Systems" [tags]="profile.operatingSystems"
-      tagClass="bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-700">
+    <app-profile-section-tags *ngFor="let section of profile.skillSections" [title]="section.title"
+      [tags]="section.tags" [tagClass]="section.gradient">
     </app-profile-section-tags>
   </div>
 

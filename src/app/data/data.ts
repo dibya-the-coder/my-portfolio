@@ -11,12 +11,43 @@ export const AllDataFields  = {
         whatsapp: "https://wa.me/917008443894"
       }
     },
-    techSkills: [".NET Core", "React", "Angular", "HTML", "CSS", "JavaScript"],
-    programmingLanguages: ["C#", "JavaScript", "TypeScript"],
-    databases: ["MS SQL Server (Hands-on experience)", "MongoDB", "PostgreSQL (Basic exposure)"],
-    designFrameworks: ["Tailwind", "Bootstrap", "React-Bootstrap", "Ant Design"],
-    tools: ["Visual Studio", "VS Code", "Postman", "GitHub Desktop", "Docker Desktop"],
-    operatingSystems: ["Windows", "Linux"],
+    skillSections: [
+      {
+        title: "Tech Skills",
+        tags: [".NET Core", "React", "Angular", "HTML", "CSS", "JavaScript"],
+        gradient: "bg-gradient-to-r from-blue-500 via-indigo-600 to-purple-600"
+      },
+      {
+        title: "Programming Languages",
+        tags: ["C#", "JavaScript", "TypeScript"],
+        gradient: "bg-gradient-to-r from-emerald-500 via-teal-600 to-cyan-600"
+      },
+      {
+        title: "Databases",
+        tags: ["MS SQL Server (Hands-on experience)", "MongoDB", "PostgreSQL (Basic exposure)"],
+        gradient: "bg-gradient-to-r from-orange-500 via-red-600 to-pink-600"
+      },
+      {
+        title: "Design Libraries & Frameworks",
+        tags: ["Tailwind", "Bootstrap", "React-Bootstrap", "Ant Design"],
+        gradient: "bg-gradient-to-r from-violet-500 via-purple-600 to-indigo-600"
+      },
+      {
+        title: "Azure (Beginner level)",
+        tags: ["Fundamentals and Architecture", "Azure Function", "Azure Web App"],
+        gradient: "bg-gradient-to-r from-sky-400 via-blue-500 to-cyan-500"
+      },
+      {
+        title: "Editors and Tools",
+        tags: ["Visual Studio", "VS Code", "Postman", "GitHub Desktop", "Docker Desktop"],
+        gradient: "bg-gradient-to-r from-slate-600 via-gray-700 to-zinc-800"
+      },
+      {
+        title: "Operating Systems",
+        tags: ["Windows", "Linux"],
+        gradient: "bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-700"
+      }
+    ],
     experience: [
       {
         role: "Software Engineer L1",
