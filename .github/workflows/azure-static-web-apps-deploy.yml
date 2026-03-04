@@ -19,6 +19,10 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: Create Base Environment
+        run: |
+          mkdir -p src/environments
+          echo "export const environment = { production: false, emailCode: '' };" > src/environments/environment.ts
       - name: Inject Secrets
         run: |
           sed -i "s/EMAIL_CODE_PLACEHOLDER/${{ secrets.EMAIL_CODE }}/g" src/environments/environment.prod.ts
