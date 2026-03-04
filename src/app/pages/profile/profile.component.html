@@ -1,8 +1,8 @@
 <div
-  class="container mx-auto p-4 sm:p-6 bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+  class="container mx-auto p-3 sm:p-6 bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
   <!-- Profile Header -->
   <div
-    class="bg-gray-100 dark:bg-gray-800 p-5 sm:p-12 rounded-xl shadow-xl flex flex-col lg:flex-row items-center lg:items-start justify-center w-full max-w-screen-2xl mx-auto transition-colors duration-300">
+    class="bg-gray-100 dark:bg-gray-800 p-3 sm:p-12 rounded-xl shadow-xl flex flex-col lg:flex-row items-center lg:items-start justify-center w-full max-w-screen-2xl mx-auto transition-colors duration-300">
     <!-- Profile Image -->
     <div class="lg:w-1/3 mb-6 lg:mb-0">
       <img src="SampleProfilePicture.jpg" alt="Profile Picture"
@@ -27,14 +27,14 @@
   </div>
 
   <!-- Skills Sections -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 sm:mt-12">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-8 mt-3 sm:mt-12">
     <app-profile-section-tags *ngFor="let section of profile.skillSections" [title]="section.title"
       [tags]="section.tags" [tagClass]="section.gradient">
     </app-profile-section-tags>
   </div>
 
   <!-- Experience and Education Section -->
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8 sm:mt-12">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 lg:gap-8 mt-3 sm:mt-12">
     <app-profile-section-list title="Experience" [items]="experienceItems" borderColorClass="border-blue-500">
     </app-profile-section-list>
     <app-profile-section-list title="Education" [items]="educationItems" borderColorClass="border-green-500">

@@ -59,13 +59,22 @@
           </div>
 
           <!-- Submit Button -->
-          <button type="submit" [disabled]="contactForm.invalid"
+          <button type="submit" [disabled]="contactForm.invalid || isSubmitting"
             class="w-full py-2 px-6 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-sm font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100">
             <span class="flex items-center justify-center gap-2">
-              <i class="fas fa-paper-plane text-xs"></i>
-              Send Message
+              <i *ngIf="!isSubmitting" class="fas fa-paper-plane text-xs"></i>
+              <i *ngIf="isSubmitting" class="fas fa-circle-notch fa-spin text-xs"></i>
+              {{ isSubmitting ? 'Sending...' : 'Send Message' }}
             </span>
           </button>
+
+          <!-- Status Messages -->
+          <div *ngIf="submitStatus" [ngClass]="{
+            'text-green-600 dark:text-green-400': submitStatus === 'success',
+            'text-red-600 dark:text-red-400': submitStatus === 'error'
+          }" class="text-center text-xs font-semibold mt-2 animate-pulse">
+            {{ statusMessage }}
+          </div>
         </div>
       </form>
 
